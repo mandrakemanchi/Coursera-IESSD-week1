@@ -25,7 +25,6 @@
 
 
 #include <stdio.h>
-#include <math.h>
 #include "stats.h"
 
 /* Size of the Data Set */
@@ -93,7 +92,6 @@ unsigned char find_mean(unsigned char *arr,unsigned int len)
     mean += *(arr+i);
   }
   mean = mean/len;
-  mean = round(mean);
   return (unsigned char)mean;
 }
 
